@@ -10,7 +10,7 @@
 		262DDB2D2D0386DB00A13843 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262DDB272D0386DB00A13843 /* Preview Assets.xcassets */; };
 		262DDB2E2D0386DB00A13843 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262DDB292D0386DB00A13843 /* Assets.xcassets */; };
 		262DDB2F2D0386DB00A13843 /* ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDB2A2D0386DB00A13843 /* ClockApp.swift */; };
-		262DDB302D0386DB00A13843 /* Landing View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDB2B2D0386DB00A13843 /* Landing View.swift */; };
+		262DDB302D0386DB00A13843 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDB2B2D0386DB00A13843 /* LandingView.swift */; };
 		262DDB332D0387D000A13843 /* WorldClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDB322D0387D000A13843 /* WorldClockView.swift */; };
 		262DDB352D0387E400A13843 /* AlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDB342D0387E400A13843 /* AlarmsView.swift */; };
 		262DDB372D0387FB00A13843 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDB362D0387FB00A13843 /* StopwatchView.swift */; };
@@ -21,7 +21,7 @@
 		262DDB272D0386DB00A13843 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		262DDB292D0386DB00A13843 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		262DDB2A2D0386DB00A13843 /* ClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockApp.swift; sourceTree = "<group>"; };
-		262DDB2B2D0386DB00A13843 /* Landing View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Landing View.swift"; sourceTree = "<group>"; };
+		262DDB2B2D0386DB00A13843 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		262DDB322D0387D000A13843 /* WorldClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockView.swift; sourceTree = "<group>"; };
 		262DDB342D0387E400A13843 /* AlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsView.swift; sourceTree = "<group>"; };
 		262DDB362D0387FB00A13843 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		262DDB312D0386FA00A13843 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				262DDB2B2D0386DB00A13843 /* Landing View.swift */,
+				262DDB2B2D0386DB00A13843 /* LandingView.swift */,
 				262DDB322D0387D000A13843 /* WorldClockView.swift */,
 				262DDB342D0387E400A13843 /* AlarmsView.swift */,
 				262DDB362D0387FB00A13843 /* StopwatchView.swift */,
@@ -161,7 +161,7 @@
 				262DDB332D0387D000A13843 /* WorldClockView.swift in Sources */,
 				262DDB352D0387E400A13843 /* AlarmsView.swift in Sources */,
 				262DDB372D0387FB00A13843 /* StopwatchView.swift in Sources */,
-				262DDB302D0386DB00A13843 /* Landing View.swift in Sources */,
+				262DDB302D0386DB00A13843 /* LandingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

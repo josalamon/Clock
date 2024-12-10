@@ -53,5 +53,3 @@ struct WorldClockView: View {
 #Preview {
     LandingView()
 }
-
-

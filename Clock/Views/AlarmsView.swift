@@ -51,6 +51,27 @@ struct AlarmsView: View {
                 
             }
             .navigationTitle("Alarms")
+            .toolbar {
+                
+                ToolbarItem(placement: .topBarLeading) {
+                    
+                    Button("Edit") {
+                        // Does nothing right now
+                    }
+                    
+                }
+                
+                ToolbarItem(placement: .primaryAction) {
+                    
+                    Button {
+                        //Does nothing right now
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                    
+                }
+                
+            }
         }
     }
 }

@@ -11,19 +11,44 @@ struct AlarmsView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                HStack {
+                    Image(systemName: "bed.double.fill")
+                    Text ("Sleep | Wake Up")
+                        .font(.system(size: 23.0, weight: .semibold, design: .default))
+                        .padding(EdgeInsets(top: 30, leading: 0, bottom: 20, trailing: 0))
+                    Spacer()
+                }
+                HStack {
+                    Text ("No Alarm")
+                        .font(.system(size: 20.0, weight: .thin, design: .default))
+                        .padding(EdgeInsets(top: 10, leading: 0, bottom: 40, trailing: 0))
+                    Spacer()
+                    
+                    Text("SET UP")
+                        .foregroundStyle(Color.orange)
+                        .padding(EdgeInsets(top: 8, leading: 20, bottom: 8, trailing: 20))
+                        .foregroundStyle(.white)
+                        .background(Color.gray, in: RoundedRectangle(cornerRadius: 20))
+                    
+                }
+                HStack {
+                    Text ("Other")
+                        .font(.system(size: 23.0, weight: .semibold, design: .default))
+                    Spacer()
+                }
                 
                 // 7:30 Alarm
-                ExtractedView(time: "7:30", amOrPm: "AM")
+                TimesView(time: "7:30", amOrPm: "AM")
                 
                 // 8:15 Alarm
-                ExtractedView(time: "8:15", amOrPm: "AM")
+                TimesView(time: "8:15", amOrPm: "AM")
                 
                 // 9:00 Alarm
-                ExtractedView(time: "9:00", amOrPm: "AM")
+                TimesView(time: "9:00", amOrPm: "AM")
                 
                 // 9:15 Alarm
-                ExtractedView(time: "9:15", amOrPm: "AM")
-
+                TimesView(time: "9:15", amOrPm: "AM")
+                
             }
             .navigationTitle("Alarms")
         }
@@ -36,34 +61,4 @@ struct AlarmsView: View {
     LandingView()
 }
 
-struct ExtractedView: View {
 
-    // MARK: Stored properties
-    let time: String
-    let amOrPm: String
-    
-    // MARK: Computed properties
-    var body: some View {
-        HStack {
-            // Left side
-            VStack (alignment: .leading) {
-                HStack (spacing: 10) {
-                    Text(time)
-                        .font(.system(size: 64.0, weight: .thin, design: .default))
-                    Text (amOrPm)
-                        .font(.system(size: 35.0, weight: .light, design: .default))
-                        .alignmentGuide(VerticalAlignment.center) { _
-                            in 12 }
-                }
-                Text ("Alarm")
-                    .font(.system(size: 20.0, weight: .regular, design: .default))
-            }
-            // Right side
-            Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
-            }
-            .tint(.green)
-            .alignmentGuide(VerticalAlignment.center) { _
-                in 23 }
-        }
-    }
-}

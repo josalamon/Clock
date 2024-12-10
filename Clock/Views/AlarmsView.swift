@@ -17,9 +17,10 @@ struct AlarmsView: View {
                         HStack (spacing: 10) {
                             Text("7:30")
                                 .font(.system(size: 64.0, weight: .thin, design: .default))
-                            
                             Text ("AM")
                                 .font(.system(size: 35.0, weight: .light, design: .default))
+                                .alignmentGuide(VerticalAlignment.center) { _
+                                in 12 }
                             Spacer()
                         }
                         Text ("Alarm")
@@ -28,6 +29,9 @@ struct AlarmsView: View {
                     // Right side
                     Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
                     }
+                    .tint(.green)
+                    .alignmentGuide(VerticalAlignment.center) { _
+                    in 23 }
                 }
             }
             .navigationTitle("Alarms")

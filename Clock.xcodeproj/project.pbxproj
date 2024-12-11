@@ -15,6 +15,7 @@
 		262DDB352D0387E400A13843 /* AlarmsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDB342D0387E400A13843 /* AlarmsView.swift */; };
 		262DDB372D0387FB00A13843 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDB362D0387FB00A13843 /* StopwatchView.swift */; };
 		262DDB392D049AFC00A13843 /* CityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDB382D049AFC00A13843 /* CityView.swift */; };
+		262DDB3D2D07F1A700A13843 /* TimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DDB3C2D07F1A700A13843 /* TimesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		262DDB342D0387E400A13843 /* AlarmsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsView.swift; sourceTree = "<group>"; };
 		262DDB362D0387FB00A13843 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		262DDB382D049AFC00A13843 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
+		262DDB3C2D07F1A700A13843 /* TimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				262DDB322D0387D000A13843 /* WorldClockView.swift */,
 				262DDB382D049AFC00A13843 /* CityView.swift */,
 				262DDB342D0387E400A13843 /* AlarmsView.swift */,
+				262DDB3C2D07F1A700A13843 /* TimesView.swift */,
 				262DDB362D0387FB00A13843 /* StopwatchView.swift */,
 			);
 			path = Views;
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262DDB3D2D07F1A700A13843 /* TimesView.swift in Sources */,
 				262DDB2F2D0386DB00A13843 /* ClockApp.swift in Sources */,
 				262DDB392D049AFC00A13843 /* CityView.swift in Sources */,
 				262DDB332D0387D000A13843 /* WorldClockView.swift in Sources */,

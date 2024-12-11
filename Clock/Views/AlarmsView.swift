@@ -10,7 +10,7 @@ import SwiftUI
 struct AlarmsView: View {
     var body: some View {
         NavigationStack {
-            VStack {
+            List {
                 HStack {
                     Image(systemName: "bed.double.fill")
                     Text ("Sleep | Wake Up")
@@ -50,6 +50,7 @@ struct AlarmsView: View {
                 TimesView(time: "9:15", amOrPm: "AM")
                 
             }
+            .listStyle(.plain)
             .navigationTitle("Alarms")
             .toolbar {
                 

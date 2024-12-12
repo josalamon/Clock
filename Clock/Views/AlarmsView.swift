@@ -9,7 +9,48 @@ import SwiftUI
 
 struct AlarmsView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack{
+                HStack{
+                    Image(systemName: "bed.double.fill")
+                    Text("Sleep | Wake Up")
+                }
+                
+                HStack{
+                    // Left side
+                    Text("7:30")
+                        .font(.system(size: 64.0, weight: .thin, design: .default))
+                    Text("AM")
+                        .font(.system(.largeTitle, design: .default, weight: .thin))
+                    
+                    Spacer()
+                    
+                    // Right side
+                    Toggle("", isOn: Binding.constant(true))
+                }
+                .padding()
+            }
+            .navigationTitle("Alarms")
+            .toolbar {
+                
+                ToolbarItem(placement: .topBarLeading) {
+                    
+                    Button("Edit") {
+                        // Does nothing right now
+                    }
+                    
+                }
+                
+                ToolbarItem(placement: .primaryAction) {
+                    
+                    Button {
+                        //Does nothing right now
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                }
+            }
+        }
     }
 }
 
